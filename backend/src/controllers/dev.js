@@ -62,7 +62,7 @@ module.exports = {
     },
 
     async destroy(req, res) {
-        Dev.findByIdAndRemove(req.body.id)
+        await Dev.findByIdAndRemove(req.body.id)
         res.send()
     }
 }
