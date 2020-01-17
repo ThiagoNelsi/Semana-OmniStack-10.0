@@ -1,2 +1,2 @@
 tasks:
-  - init: cd backend && npm install && cd ../web && npm install
+  - init: cd backend && yarn add
