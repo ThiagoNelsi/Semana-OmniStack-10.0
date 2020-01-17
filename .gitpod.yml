@@ -1,0 +1,3 @@
+tasks:
+  - init: yarn global install expo-cli && export PATH="$(yarn global bin):PATH" && cd backend && yarn install && cd ../web && yarn install && cd ../mobile && yarn install
+
