@@ -1,12 +1,2 @@
 tasks:
-  - init: >
-    cd backend &&
-    npm install
-  - init: >
-    cd web &&
-    npm install
-  - init: >
-    npm i -g expo-cli &&
-    cd mobile &&
-    npm install   
-    
+  - init: npm install    
