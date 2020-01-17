@@ -1,2 +1,2 @@
 tasks:
-  - init: npm install    
+  - init: cd backend && npm install && cd ../web && npm install
