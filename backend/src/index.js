@@ -3,9 +3,12 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const routes = require('./routes')
 
+const mongoCredentials = require('../credentials/mongodb.json')
+const { username, password } = mongoCredentials
+
 const app = express()
 
-mongoose.connect('mongodb+srv://<user>:<password>@cluster0-jcjhx.mongodb.net/week10?retryWrites=true&w=majority', {
+mongoose.connect(`mongodb+srv://${username}:${password}@cluster0-jcjhx.mongodb.net/week10?retryWrites=true&w=majority`, {
     useFindAndModify:false,
     useCreateIndex: true,
     useNewUrlParser: true,

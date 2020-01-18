@@ -46,11 +46,12 @@ function Form({ onSubmit }) {
 
                 <label htmlFor="github_username">Usuário do Github</label>
                 <input
-                name="github_username"
-                id="github_username"
-                value={github_username}
-                onChange={event => setGithubUsername(event.target.value)}
-                required/>
+                    name="github_username"
+                    id="github_username"
+                    value={github_username}
+                    onChange={event => setGithubUsername(event.target.value)}
+                    required
+                />
                 
             </div>
 
@@ -58,11 +59,12 @@ function Form({ onSubmit }) {
 
                 <label htmlFor="techs">Tecnologias</label>
                 <input
-                name="techs"
-                id="techs"
-                value={techs}
-                onChange={event => setTechs(event.target.value)}
-                required/>
+                    name="techs"
+                    id="techs"
+                    value={techs}
+                    onChange={event => setTechs(event.target.value)}
+                    required
+                />
 
             </div>
 

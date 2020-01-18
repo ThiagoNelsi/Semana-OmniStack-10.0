@@ -7,7 +7,6 @@ module.exports = {
         const { latitude, longitude, techs } = req.query
         let techsArray = parseStringAsArray(techs)
         techsArray = allElementsToLowerCase(techsArray)
-        console.log(techsArray)
         
         const devs = await Dev.find({
             techs: {
